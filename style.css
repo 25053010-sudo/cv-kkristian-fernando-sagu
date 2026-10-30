@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #263238;
+    color: #ffffff;
+}
+
+/* BAGIAN ATAS */
+.header {
+    background: linear-gradient(180deg, #37474f, #263238);
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.foto {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #4fc3f7;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.header p {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+/* MENU UTAMA */
+.tab-nav {
+    display: flex;
+    background: #37474f;
+    border-bottom: 1px solid #455a64;
+}
+
+.tab-item {
+    flex: 1;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #b0bec5;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.tab-item.aktif {
+    color: #4fc3f7;
+    border-bottom: 3px solid #4fc3f7;
+    font-weight: 600;
+    background: rgba(79, 195, 247, 0.1);
+}
+
+/* SUB MENU */
+.submenu-wrapper {
+    background: #304148;
+    padding: 15px 20px;
+    border-bottom: 1px solid #455a64;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu.aktif {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.sub-item {
+    padding: 10px 20px;
+    background: #37474f;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #e0e0e0;
+    cursor: pointer;
+    border: 1px solid #455a64;
+    transition: all 0.2s;
+}
+
+.sub-item.aktif {
+    background: #4fc3f7;
+    color: #000000;
+    border-color: #4fc3f7;
+}
+
+/* KONTEN */
+.content {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.isi {
+    display: none;
+    background: #37474f;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.isi.aktif {
+    display: block;
+}
+
+.isi h2 {
+    font-size: 24px;
+    color: #4fc3f7;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #455a64;
+    margin-bottom: 20px;
+}
+
+.isi p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+}
+
+/* TOMBOL KEMBALI KE ATAS */
+#btnKembali {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #4fc3f7;
+    color: #000000;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 9999;
+}
+
+#btnKembali:hover {
+    background: #29b6f6;
+}

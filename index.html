@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Kristian Fernando Sagu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header" id="atas">
+        <img src="foto.jpeg" alt="Foto Profil" class="foto">
+        <h1>Kristian Fernando Sagu</h1>
+        <p>Mahasiswa UWP - Teknik Informatika</p>
+    </div>
+
+    <div class="tab-nav">
+        <div class="tab-item aktif" onclick="gantiTab('beranda')">Beranda</div>
+        <div class="tab-item" onclick="gantiTab('profil')">Profil</div>
+        <div class="tab-item" onclick="gantiTab('lainnya')">Lainnya</div>
+    </div>
+
+    <div class="submenu-wrapper">
+        <div class="submenu aktif" id="beranda">
+            <div class="sub-item aktif" onclick="tampilKonten('dashboard')">Dashboard</div>
+            <div class="sub-item" onclick="tampilKonten('tentang')">Tentang Saya</div>
+        </div>
+        <div class="submenu" id="profil">
+            <div class="sub-item aktif" onclick="tampilKonten('data')">Data Pribadi</div>
+            <div class="sub-item" onclick="tampilKonten('pendidikan')">Pendidikan</div>
+            <div class="sub-item" onclick="tampilKonten('keahlian')">Keahlian</div>
+        </div>
+        <div class="submenu" id="lainnya">
+            <div class="sub-item aktif" onclick="tampilKonten('karya')">Karya</div>
+            <div class="sub-item" onclick="tampilKonten('kontak')">Kontak</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="isi aktif" id="dashboard">
+            <h2>📋 Dashboard</h2>
+            <p>Selamat datang di portofolio pribadi saya!</p>
+            <p>Setiap langkah adalah proses, setiap karya adalah bukti, dan setiap pengalaman adalah pelajaran untuk
+                menjadi lebih baik.</p>
+        </div>
+        <div class="isi" id="tentang">
+            <h2>📝 Tentang Saya</h2>
+            <p>Saya tidak menargetkan menjadi yang paling hebat. Tapi saya berkomitmen untuk selalu menjadi versi yang
+                lebih baik dari diri saya kemarin.</p>
+        </div>
+        <div class="isi" id="data">
+            <h2>👤 Data Pribadi</h2>
+            <p><strong>Tempat Lahir:</strong> Surabaya, Jawa Timur</p>
+            <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+            <p><strong>Agama:</strong> Katolik</p>
+            <p><strong>Domisili:</strong> Hr Muhammad, Dukuh Pakis</p>
+            <p><strong>Pendidikan Saat Ini:</strong> Mahasiswa Teknik Informatika - Universitas Wijaya Putra</p>
+            <p><strong>Asal Sekolah Sebelumnya:</strong> SMK Informatika St.Petrus Ruteng</p>
+            <p><strong>Hobi:</strong> Bermain game, dan menonton film</p>
+        </div>
+        <div class="isi" id="pendidikan">
+            <h2>🎓 Riwayat Pendidikan</h2>
+            <p><strong>Universitas Wijaya Putra</strong></p>
+            <p>S1 Teknik Informatika | 2025 - Sekarang</p>
+            <p><strong>SMK Informatika St. Petrus Ruteng</strong></p>
+            <p>2020 - 2023</p>
+            <p><strong>SMPN 2 Langke Rembong</strong></p>
+            <p>2017 - 2020</p>
+            <p><strong>SDK Beo Rahong</strong></p>
+            <p>2011 - 2017</p>
+        </div>
+        <div class="isi" id="keahlian">
+            <h2>💡 Keahlian</h2>
+            <p>✅ Dasar Pemrograman (HTML, CSS, Python)</p>
+            <p>✅ Desain Grafis Dasar</p>
+        </div>
+        <div class="isi" id="karya">
+            <h2>💼 Karya</h2>
+            <p><strong>FASUM</strong></p>
+            <p>Aplikasi untuk melaporkan fasilitas yang rusak. Pengguna dapat melihat status penyelesaian laporan.</p>
+            <p><strong>Aplikasi Edukasi Anti-Scam</strong></p>
+            <p>Aplikasi edukasi yang mengajarkan cara mengenali pesan penipuan, tautan palsu, dan modus penipuan digital
+            </p>
+        </div>
+        <div class="isi" id="kontak">
+            <h2>📞 Kontak</h2>
+            <p>📧 Email: saguxxxxx@email.com</p>
+            <p>📱 WhatsApp: +62 813-xxxx-xxxx</p>
+            <p>🌐 GitHub: github.com/kristian-fernando-sagu</p>
+        </div>
+    </div>
+
+    <button id="btnKembali" onclick="kembaliKeAtas()">↑</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
